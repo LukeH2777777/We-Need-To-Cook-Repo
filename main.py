@@ -1,4 +1,4 @@
-from Player import *
+from player import *
 from npc import *
 
 player = Player("will")
