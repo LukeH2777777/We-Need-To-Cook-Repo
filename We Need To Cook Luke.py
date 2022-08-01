@@ -1,5 +1,6 @@
 import time
 import utilities
+from player import Player
 
 def gamestart():
     command, argument = input().split()
@@ -23,5 +24,8 @@ def startgame():
     utilities.printout("Y or N")
     if input().lower() in ["y", "yes"]:
         tutorial()
+
+#player = Player("Young lad")
+#print(f"{player.getName()} swung for {player.getAttackDamage()} damage")
 
 startgame()
