@@ -1,5 +1,5 @@
 import time
-import utilities
+import utilities as ut
 from player import Player
 
 def gamestart():
@@ -12,16 +12,16 @@ def parseCommand():
     pass
 
 def tutorial():
-    utilities.printout("Welcome to the tutorial!", delay=2)
-    utilities.printout("First off, lets set your health to 100!", delay=2)
+    ut.printout("Welcome to the tutorial!", delay=2)
+    ut.printout("First off, lets set your health to 100!", delay=2)
     gamestart()
 
 
 # TODO: see if a save file exists, if so, load the file, else do this part.
 def startgame():
-    utilities.printout("Welcome to We Need To Cook!", delay=2)
-    utilities.printout("Would you like a tutorial?", delay=1)
-    utilities.printout("Y or N")
+    ut.printout("Welcome to We Need To Cook!", delay=2)
+    ut.printout("Would you like a tutorial?", delay=1)
+    ut.printout("Y or N")
     if input().lower() in ["y", "yes"]:
         tutorial()
 
