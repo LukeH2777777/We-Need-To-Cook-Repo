@@ -11,7 +11,9 @@ import time
 def printout(s: str, newLine: bool = True, delay: int = 0) -> None:
     for c in s:
         print(c, end="", flush=True)
-        time.sleep(0.1)
+        time.sleep(0.8 / len(s))
+
     if newLine:
         print()
+
     time.sleep(delay)
