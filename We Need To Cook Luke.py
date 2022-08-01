@@ -1,39 +1,27 @@
+import time
+import utilities
+
 def gamestart():
-    healthcount == "100"
-    healthcommand = "/health"
-    command, argument = 
-    mycommand.split()
-    print(command)/buy
-    print(argument)
+    command, argument = input().split()
+    print(f"{command=}")
+    print(f"{argument=}")
 
-
-
-
+# TODO: do this function.
+def parseCommand():
+    pass
 
 def tutorial():
-    import time
-    print("Welcome to the tutorial!")
-    time.sleep(2)
-    print("First off, lets set your health to 100!")
-    time.sleep(2)
+    utilities.printout("Welcome to the tutorial!", delay=2)
+    utilities.printout("First off, lets set your health to 100!", delay=2)
     gamestart()
 
 
-
-
-
-
-
+# TODO: see if a save file exists, if so, load the file, else do this part.
 def startgame():
-    import time
-    print ("Welcome to We Need To Cook!")
-    time.sleep(2)
-    print("Would you like a tutorial?")
-    time.sleep(1)
-    print("Y or N")
-    tutorial=input()
-    if tutorial == "y":
-        tutorial()
-    if tutorial == "Y":
+    utilities.printout("Welcome to We Need To Cook!", delay=2)
+    utilities.printout("Would you like a tutorial?", delay=1)
+    utilities.printout("Y or N")
+    if input().lower() in ["y", "yes"]:
         tutorial()
 
+startgame()
