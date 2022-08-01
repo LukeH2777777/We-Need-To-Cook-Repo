@@ -1,7 +1,11 @@
+import uuid
+
+
 class FoodItem:
 
     def __init__(self, name: str, display_name: str, heal_amount: int, cost: int):
 
+        self.id = uuid.uuid4().hex
         self.name = name
         self.display_name = display_name
         self.heal_amount = heal_amount
