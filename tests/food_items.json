@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "apple",
+      "display_name": "Apple",
+      "heal_amount": 40,
+      "cost": 10
+    },
+    {
+      "name": "banana",
+      "display_name": "Banana",
+      "heal_amount": 100,
+      "cost": 50
+    },
+    {
+      "name": "steak",
+      "display_name": "Steak",
+      "heal_amount": 20,
+      "cost": 500
+    },
+    {
+      "name": "bolognese",
+      "display_name": "Bolognese",
+      "heal_amount": 100,
+      "cost": 5000
+      },
+    {
+      "name": "doughnut",
+      "display_name": "Homer's Doughnut",
+      "heal_amount": 1000,
+      "cost": 50000
+    }
+  ]
+}
