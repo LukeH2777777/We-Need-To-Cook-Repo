@@ -4,31 +4,36 @@
       "name": "apple",
       "display_name": "Apple",
       "heal_amount": 40,
-      "cost": 10
+      "cost": 10,
+      "weight": 1.0
     },
     {
       "name": "banana",
       "display_name": "Banana",
       "heal_amount": 100,
-      "cost": 50
+      "cost": 50,
+      "weight": 1.0
     },
     {
       "name": "steak",
       "display_name": "Steak",
       "heal_amount": 20,
-      "cost": 500
+      "cost": 500,
+      "weight": 1.0
     },
     {
       "name": "bolognese",
       "display_name": "Bolognese",
       "heal_amount": 100,
-      "cost": 5000
+      "cost": 5000,
+      "weight": 1.0
       },
     {
       "name": "doughnut",
       "display_name": "Homer's Doughnut",
       "heal_amount": 1000,
-      "cost": 50000
+      "cost": 50000,
+      "weight": 1.0
     }
   ]
 }
