@@ -1,6 +1,8 @@
 import time
 import utilities as ut
 from player import Player
+import konami
+
 
 def gamestart():
     command, argument = input().split()
@@ -25,7 +27,13 @@ def startgame():
     if input().lower() in ["y", "yes"]:
         tutorial()
 
+
 #player = Player("Young lad")
 #print(f"{player.getName()} swung for {player.getAttackDamage()} damage")
 
-startgame()
+try:
+    startgame()
+except KeyboardInterrupt:
+    print("Quitting....")
+    #if you want to save stuff when the player quits
+    #put your code here
