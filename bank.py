@@ -24,11 +24,8 @@ class Bank:
         self.money = money
 
     def deposit(self,amount):
-        if amount > self.money:
-            print("insufficient balance")
-        else:
-            self.money += amount
-            ut.printout(f"{amount} has been credited to your account.")
+        self.money += amount
+        ut.printout(f"{amount} has been credited to your account.")
 
     def withdraw(self,amount):
         if amount > self.money:
