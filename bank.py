@@ -31,7 +31,7 @@ class Bank:
 
     def withdraw(self,amount):
         if amount > self.money:
-            print("insufficient funds")
+            ut.printout("insufficient funds")
         else:
             self.money -= amount
             self.money += self.cash
