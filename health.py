@@ -24,3 +24,4 @@ class Health:
         return {
             "health": self.score
         }
+
