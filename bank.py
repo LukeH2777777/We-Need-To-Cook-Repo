@@ -2,9 +2,7 @@ import utilities as ut
 """
 make sure you create an instance like this
 
-Bank = Bank()
-
-or else it would throw a metric fuck tone of errors :)
+bank = Bank()
 
 """
 
