@@ -1,47 +1,44 @@
 import utilities as ut
 """
 make sure you create an instance like this
-
 bank = Bank()
-
+or else it would throw a metric fuck tone of errors :)
 """
 
 
 class Bank:
 
-    def __init__(self,money=0,cash=1000):
-        self.money = money
+    def __init__(self,account=500,cash=500):
+        self.account = account
         self.cash = cash
 
     def cash_balance(self):
-        ut.printout(f"you got {self.cash} in cash")
+        return self.cash
       
     def balance(self):
-        ut.printout(f"your balance is {self.money}.")
+        return self.account
 
     def deposit(self,amount):
         if amount > self.cash:
-            ut.printout("insufficient funds")
+            return
         else:
-            self.money += amount
+            self.account += amount
             self.cash -= amount
-            ut.printout(f"{amount} has been credited to your account.")
 
     def withdraw(self,amount):
-        if amount > self.money:
-            ut.printout("insufficient funds")
+        if amount > self.account:
+            return
         else:
-            self.money -= amount
-            self.money += self.cash
-            ut.printout(f"{amount} has been withdrawn from your account.")
-    
+            self.account -= amount  
+            amount += self.cash
+
+    def dev_add(self, amount):
+        self.account += amount 
+
     def to_dict(self):
         return {
-            "Bank": self.money,
+            "Bank": self.account,
             "Cash": self.cash
         }
 
-
-
-#for testing remove on release.
 
