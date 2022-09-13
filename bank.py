@@ -44,10 +44,4 @@ class Bank:
 
 
 #for testing remove on release.
-"""
-Bank = Bank()
-Bank.balance()
-Bank.cash_balance()
-Bank.withdraw(1000)
-Bank.deposit(10000000)
-"""
+
