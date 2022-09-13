@@ -11,6 +11,6 @@ def test_increment():
     vito = Vito_ganyada()
     vito.increment(100)
     result = vito.score
-    assert result == 100
+    assert result == 600
 
 
